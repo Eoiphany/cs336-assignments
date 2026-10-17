@@ -1,0 +1,13 @@
+Date: 2026-10-16
+
+After installing the language, NSFW, and toxicity models:
+  uv run pytest -q --tb=short
+  20 passed, 1 failed (missing locally trained quality model).
+
+After training runs/quality_fasttext.bin from 1,200 Wikipedia Good articles
+and 1,200 Common Crawl documents:
+  uv run pytest tests/test_quality.py::test_classify_quality -q --tb=short
+  1 passed.
+
+The full suite was not rerun after generating the quality model. Test fixtures
+were not included in the training data.

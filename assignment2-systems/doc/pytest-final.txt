@@ -1,0 +1,17 @@
+
+tests/test_attention.py::test_flash_forward_pass_pytorch PASSED
+tests/test_attention.py::test_flash_forward_pass_triton[False] SKIPPED
+tests/test_attention.py::test_flash_forward_pass_triton[True] SKIPPED
+tests/test_attention.py::test_flash_backward_pytorch PASSED
+tests/test_attention.py::test_flash_backward_triton[False] SKIPPED (...)
+tests/test_attention.py::test_flash_backward_triton[True] SKIPPED (A...)
+tests/test_ddp.py::test_DistributedDataParallel[ToyModel] PASSED
+tests/test_ddp.py::test_DistributedDataParallel[ToyModelWithTiedWeights] PASSED
+tests/test_fsdp.py::test_fsdp_correctness[fp32] PASSED
+tests/test_fsdp.py::test_fsdp_correctness[fp16] PASSED
+tests/test_fsdp.py::test_fsdp_gradient_sync[fp32] PASSED
+tests/test_fsdp.py::test_fsdp_gradient_sync[fp16] PASSED
+tests/test_sharded_optimizer.py::test_sharded_optimizer[ToyModel] PASSED
+tests/test_sharded_optimizer.py::test_sharded_optimizer[ToyModelWithTiedWeights] PASSED
+
+======================== 10 passed, 4 skipped in 10.01s ========================

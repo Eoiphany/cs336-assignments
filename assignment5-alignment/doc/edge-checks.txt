@@ -1,0 +1,3 @@
+PASS: empty prompt leaves no phantom response label
+PASS: sequence normalization is invariant to uneven microbatches and zero-reward pruning
+PASS: constant normalization is invariant to uneven microbatches and zero-reward pruning
